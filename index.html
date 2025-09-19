@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>بطاقة VIP الفاخرة</title>
+
+        <!-- Google Fonts - خطوط عربية فاخرة -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+
+        <!-- Font Awesome - أيقونات احترافية -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <!-- CSS الرئيسي -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <!-- نافذة البداية (Splash Screen) -->
+<div id="splash-screen">
+    <div class="splash-content">
+        <img src="LOGO.jpg" alt="صورة أسطورية" class="splash-profile">
+        <h1 class="splash-title"> 
+            <span>شخصات مهمة VIP</span>
+        </h1>
+        <button class="splash-btn" onclick="enterSite()">  ابدا </button>
+    </div>
+</div>
+
+        <!-- خلفية الصفحة -->
+        <div class="background-overlay"></div>
+        <div class="background-pattern"></div>
+
+        <!-- زر تبديل الوضع الليلي -->
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="main-content">
+            <!-- بطاقة VIP الفاخرة -->
+            <div class="vip-card">
+                <!-- تاج VIP -->
+                <div class="vip-crown">
+
+                    <span class="vip-badge">VIP</span>
+                </div>
+
+                <!-- صورة الخلفية -->
+                <div class="card-background">
+                    <img src="BG.jpg" alt="خلفية فاخرة">
+                </div>
+
+                <div class="card-content">
+                    <div class="profile-section">
+                        <div class="profile-image-container">
+                            <div class="profile-frame">
+                                <img src="LOGO.jpg" alt="صورة الملف الشخصي">
+                                <div class="profile-glow"></div>
+                            </div>
+                        </div>
+
+                        <div class="profile-info">
+                            <h1 class="vip-name"> المهندس / صلاح - ستارلينك
+                            </h1>
+                            <h2 class="vip-title"> مهندس شبكات ستارلينك الحديثة
+                            </h2>
+                            <p class="vip-company"> تركيب وبيع وجميع خدمات اجهزة
+                                ستارلينك </p>
+                            <div class="vip-status">
+                                <i class="fas fa-crown"></i>
+                                <span>شخصات مهمة VIP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-section">
+                        <div class="contact-grid">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">الهاتف</span>
+
+                                    <span class="contact-value LTR"> +235 66 57
+                                        14 90 </span>
+                                    <span class="contact-value LTR"> +235 90 49
+                                        40 41 </span>
+                                    <span class="contact-value LTR"> +235 66 57
+                                        14 90 </span>
+                                    <style>.LTR{direction: ltr;}</style>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-bank"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label"> 
+                                        رقم حساب بنكك </span>
+                                    <span
+                                        class="contact-value">  326588 </span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">البريد
+                                        الإلكتروني</span>
+                                    <span
+                                        class="contact-value">salahstarlink@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">الموقع</span>
+                                    <span class="contact-value"> تشاد انجمينا -
+                                        سوق مارشال مقابل مستشفى الحريري العالمي
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                 
+                <div class="social-section">
+                    <h3>تواصل معي</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/23566571490" class="social-link whatsapp"  ">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>واتساب</span>
+                        </a>
+                        <a href="https://wa.me/23566571490" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>إنستغرام</span>
+                        </a>
+                        <a href="https://wa.me/23566571490" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>تويتر</span>
+                        </a>
+                        <a href="https://wa.me/23566571490" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>لينكد إن</span>
+                        </a>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+            <div class="vip-card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.0019063707112!2d15.054910724349766!3d12.127684761496289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x111963000d5bb8c3%3A0x4ccf42f216f275f7!2z2YXYqtis2LEg2YXYp9ix2LTYp9mEINmE2YTZh9mI2KfYqtmBINin2YTZhdit2YXZiNmE2Kk!5e1!3m2!1sar!2std!4v1758293611970!5m2!1sar!2std"
+                    width="100%" height="450" style="border:0;" allowfullscreen
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+                </iframe>
+            </div>
+            <!-- معلومات VIP -->
+            <div class="vip-info">
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-star"></i>
+                        <h3>خدمات VIP</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="vip-services">
+                            <li><i class="fas fa-check"></i> بيع أجهزة Starlink
+                                الأصلية</li>
+                            <li><i class="fas fa-check"></i> تركيب وضبط أطباق
+                                Starlink باحترافية</li>
+                            <li><i class="fas fa-check"></i> إعداد الشبكات
+                                المنزلية والتجارية عبر Starlink</li>
+                            <li><i class="fas fa-check"></i> صيانة وإصلاح أعطال
+                                أجهزة Starlink</li>
+                            <li><i class="fas fa-check"></i> استشارات تقنية
+                                لاختيار الباقة المناسبة</li>
+                            <li><i class="fas fa-check"></i> دعم فني متواصل
+                                للعملاء</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-clock"></i>
+                        <h3>ساعات العمل</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="working-hours">
+                            <div class="time-slot">
+                                <span class="days"> دوام كامل </span>
+                                <span class="time"> مفتوح دوماً </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Navbar التفاعلي الجديد -->
+        <nav class="luxury-navbar">
+            <div class="navbar-container">
+                <!-- زر الهاتف (بارز) -->
+                <a href="tel:+23560494041">
+                    <button class="nav-btn primary-btn phone-btn" ">
+                        <i class="fas fa-phone"></i>
+                        <span>ارتيل</span>
+                    </button>
+                </a>
+                <a href="tel:+23590494041">
+                    <button class="nav-btn primary-btn phone-btn" ">
+                        <i class="fas fa-phone"></i>
+                        <span>تيقو</span>
+                    </button>
+                </a>
+                <a href="https://wa.me/23566571490">
+                    <!-- زر WhatsApp (بارز) -->
+                    <button class="nav-btn primary-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>واتساب</span>
+                    </button>
+                </a>
+
+                <!-- زر الخريطة -->
+                <a href="https://maps.app.goo.gl/K7Yjh2saaaC911kX6">
+                    <button class="nav-btn secondary-btn map-btn">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>الموقع</span>
+                    </button>
+                </a>
+                <!-- زر TikTok -->
+                <a href="https://www.tiktok.com/@salaheddine7742">
+                    <button class="nav-btn secondary-btn tiktok-btn">
+                        <i class="fab fa-tiktok"></i>
+                        <span>تيك توك</span>
+                    </button>
+                </a>
+
+                <!-- زر QR Code -->
+                <button class="nav-btn secondary-btn qr-btn">
+                    <i class="fas fa-qrcode"></i>
+                    <span>QR</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- زر الحفظ العائم -->
+      
+        <button class="floating-save-btn" onclick="captureAndSave()">
+    <i class="fas fa-camera"></i>
+    <span>التقط وحفظ</span>
+</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+        <!-- Modal للـ QR Code -->
+        <div id="qrModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeQRModal()">&times;</span>
+                <div class="modal-header">
+                    <i class="fas fa-qrcode"></i>
+                    <h3>رمز الاستجابة السريعة</h3>
+                </div>
+                <div class="qr-code">
+                    <img
+                        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://example.com/contact"
+                        alt="QR Code">
+                </div>
+                <p>امسح الرمز لحفظ البطاقة</p>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
