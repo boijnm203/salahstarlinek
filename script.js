@@ -528,8 +528,8 @@ function enterSite() {
     document.getElementById("splash-screen").style.display = "none";
 
     // تشغيل ملف صوت/فيديو ترحيبي
-    let audio = new Audio("hello.wav"); // ضع ملفك الصوتي باسم welcome.mp3
-    audio.play();
+   // let audio = new Audio("hello.wav"); // ضع ملفك الصوتي باسم welcome.mp3
+   // audio.play();
 }
 function captureAndSave() {
     html2canvas(document.body).then(canvas => {
@@ -543,3 +543,4 @@ function captureAndSave() {
         link.click();
     });
 }
+
