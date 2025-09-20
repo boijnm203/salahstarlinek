@@ -123,7 +123,7 @@
         },
         {
             // أمر حفظ الصورة
-            keywords: ["حفظ", "صورة", "التقط"],
+            keywords: ["حفظ", "احفظ", "احفظ البطاقة"],
             action: () => {
                 // تحديد رابط الصورة على موقعك
                 const imageURL = window.location.origin + "/images/card.png";
@@ -139,12 +139,15 @@
 
                 // تحديث الحالة في الصفحة
                 updateStatus("تم تنزيل الصورة بنجاح!");
+                const audio = new Audio("save.wav"); // ضع مسار ملف الصوت هنا
+                audio.play().catch(err => console.error("خطأ في تشغيل الصوت:", err));
+
             }
         },
         {
  
 
-            keywords: ["ما اسمك ", 'من انت',],
+            keywords: ["ما اسمك ", 'من انت'],
             action: () => {
                 const audio = new Audio("iam.wav"); // ضع مسار ملف الصوت هنا
                 audio.play().catch(err => console.error("خطأ في تشغيل الصوت:", err));
@@ -154,7 +157,7 @@
           {
     
 
-            keywords: ["مميزة", 'شخصية',],
+            keywords: ["اتقان تك", 'اتقان' , 'اريد', 'كارد' ,'ندور','كادرفيذد'],
             action: () => {
                 const whatsappNumber = "23568775247";
                 const url = `https://wa.me/${whatsappNumber}`;
@@ -187,6 +190,10 @@
 
         if (!found) updateStatus("أمر غير معروف: " + command);
         }
+
+        setTimeout(() => {
+            recognition.start();
+        }, 200);
 } 
 
  
